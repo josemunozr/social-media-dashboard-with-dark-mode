@@ -1,0 +1,25 @@
+{
+  "name": "social-media-dashboard-with-dark-mode",
+  "version": "1.0.0",
+  "description": "Social media dashboard with dark mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass css/styles.scss css/styles.css --watch",
+    "server": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josemunozr/social-media-dashboard-with-dark-mode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josemunozr/social-media-dashboard-with-dark-mode/issues"
+  },
+  "homepage": "https://github.com/josemunozr/social-media-dashboard-with-dark-mode#readme",
+  "devDependencies": {
+    "sass": "^1.26.5"
+  }
+}
