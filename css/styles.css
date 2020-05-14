@@ -1,10 +1,30 @@
 body {
-  background-color: lightblue;
+  background-color: white;
   margin: 0;
-  padding: 0;
+  padding: 30px 10%;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 14px;
+}
+
+.main-indicators {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.main-indicators__item {
+  width: 300px;
+  height: 250px;
+  background-color: #f0f2fa;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-indicators__item .count span {
+  font-weight: 700;
+  font-size: 4em;
 }
 
 /*# sourceMappingURL=styles.css.map */
