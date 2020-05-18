@@ -1,18 +1,38 @@
 body {
   background-color: white;
   margin: 0;
-  padding: 30px 10%;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 14px;
 }
 
-.main-indicators {
+.header {
+  background-color: #f5f7ff;
+  height: 250px;
+  padding-top: 4em;
+}
+.header .title h1 {
+  margin: 0;
+}
+.header .title p {
+  margin: 0;
+  font-weight: bold;
+  color: gray;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.indicators {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 49px;
+  position: absolute;
+  top: 160px;
 }
-.main-indicators__item {
+.indicators__item {
   width: 300px;
   height: 250px;
   background-color: #f0f2fa;
@@ -21,10 +41,55 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-radius: 6px;
 }
-.main-indicators__item .count span {
+.indicators__item.facebook {
+  border-top: 6px solid #1ca0f2;
+}
+.indicators__item.twitter {
+  border-top: 6px solid deepskyblue;
+}
+.indicators__item.instagram {
+  border-top: 6px solid linear gradient #fdc468 to #df4996;
+}
+.indicators__item.youtube {
+  border-top: 6px solid #c4032a;
+}
+.indicators__item .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+}
+.indicators__item .social-media img {
+  margin-right: 5px;
+}
+.indicators__item .count span {
   font-weight: 700;
   font-size: 4em;
+}
+.indicators__item .count p {
+  margin: 0;
+  font-size: 1.1em;
+  letter-spacing: 4px;
+  text-transform: UPPERCASE;
+  color: gray;
+}
+.indicators__item .current {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.indicators__item .current.up {
+  color: #1fb589;
+}
+.indicators__item .current.down {
+  color: #dc414c;
+}
+.indicators__item .current img {
+  margin-right: 5px;
+  width: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

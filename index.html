@@ -12,69 +12,75 @@
   </head>
   <body>
     <header class="header">
-      <h1>Social Media Dashboard</h1>
-      <p>Total Folowers: <span>23,000</span></p>
+      <div class="wrapper">
+        <div class="title">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: <span>23,000</span></p>
+        </div>
+      </div>
     </header>
-    <section class="main-indicators">
-      <article class="main-indicators__item">
-        <div class="social-media">
-          <img src="" alt="facebook" />
-          <span>@jmunoz</span>
-        </div>
-        <div class="count">
-          <span>1987</span>
-          <p>Folowers</p>
-        </div>
-        <div class="current">
-          <img src="" alt="top" />
-          <span>12 Today</span>
-        </div>
-      </article>
-      <article class="main-indicators__item">
-        <div class="social-media">
-          <img src="" alt="twitter" />
-          <span>@jmunoz</span>
-        </div>
-        <div class="count">
-          <span>1044</span>
-          <p>Folowers</p>
-        </div>
-        <div class="current">
-          <img src="" alt="top" />
-          <span>99 Today</span>
-        </div>
-      </article>
-      <article class="main-indicators__item">
-        <div class="social-media">
-          <img src="" alt="instagram" />
-          <span>@jmunoz</span>
-        </div>
-        <div class="count">
-          <span>11K</span>
-          <p>Folowers</p>
-        </div>
-        <div class="current">
-          <img src="" alt="top" />
-          <span>1099 Today</span>
-        </div>
-      </article>
-      <article class="main-indicators__item">
-        <div class="social-media">
-          <img src="" alt="youtube" />
-          <span>@jmunoz</span>
-        </div>
-        <div class="count">
-          <span>8239</span>
-          <p>Suscibers</p>
-        </div>
-        <div class="current">
-          <img src="" alt="down" />
-          <span>144 Today</span>
-        </div>
-      </article>
-    </section>
-    <section class="overview">
-      <h1>Overview - Today</h1>
-    </section>
+    <div class="wrapper">
+      <section class="indicators">
+        <article class="indicators__item facebook">
+          <div class="social-media">
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+            <span>@jmunoz</span>
+          </div>
+          <div class="count">
+            <span>1987</span>
+            <p>Followers</p>
+          </div>
+          <div class="current up">
+            <img src="./images/icon-up.svg" alt="up" />
+            <span>12 Today</span>
+          </div>
+        </article>
+        <article class="indicators__item twitter">
+          <div class="social-media">
+            <img src="./images/icon-twitter.svg" alt="twitter" />
+            <span>@jmunoz</span>
+          </div>
+          <div class="count">
+            <span>1044</span>
+            <p>Followers</p>
+          </div>
+          <div class="current up">
+            <img src="./images/icon-up.svg" alt="up" />
+            <span>99 Today</span>
+          </div>
+        </article>
+        <article class="indicators__item instagram">
+          <div class="social-media">
+            <img src="./images/icon-instagram.svg" alt="instagram" />
+            <span>@jmunoz</span>
+          </div>
+          <div class="count">
+            <span>11K</span>
+            <p>Followers</p>
+          </div>
+          <div class="current up">
+            <img src="./images/icon-up.svg" alt="up" />
+            <span>1099 Today</span>
+          </div>
+        </article>
+        <article class="indicators__item youtube">
+          <div class="social-media">
+            <img src="./images/icon-youtube.svg" alt="youtube" />
+            <span>jmunoz</span>
+          </div>
+          <div class="count">
+            <span>8239</span>
+            <p>Suscibers</p>
+          </div>
+          <div class="current down">
+            <img src="./images/icon-down.svg" alt="down" />
+            <span>144 Today</span>
+          </div>
+        </article>
+      </section>
+      <section class="overview">
+        <h1>Overview - Today</h1>
+      </section>
+    </div>
   </body>
 </html>
