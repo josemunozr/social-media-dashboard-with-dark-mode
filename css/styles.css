@@ -11,29 +11,32 @@ body {
   height: 250px;
   padding-top: 4em;
 }
-.header .title h1 {
+.header__wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.header__wrapper .title h1 {
   margin: 0;
 }
-.header .title p {
+.header__wrapper .title p {
   margin: 0;
   font-weight: bold;
   color: gray;
 }
 
 .wrapper {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
+  top: -120px;
+  position: relative;
 }
 
-.indicators {
+.cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 49px;
-  position: absolute;
-  top: 160px;
 }
-.indicators__item {
-  width: 300px;
+.cards__item {
   height: 250px;
   background-color: #f0f2fa;
   padding: 10px;
@@ -42,52 +45,85 @@ body {
   flex-direction: column;
   justify-content: space-around;
   border-radius: 6px;
+  position: relative;
 }
-.indicators__item.facebook {
-  border-top: 6px solid #1ca0f2;
+.cards__item.facebook::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: #1ca0f2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
-.indicators__item.twitter {
-  border-top: 6px solid deepskyblue;
+.cards__item.twitter::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: deepskyblue;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
-.indicators__item.instagram {
-  border-top: 6px solid linear gradient #fdc468 to #df4996;
+.cards__item.instagram::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(45deg, #fdc468, #df4996);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
-.indicators__item.youtube {
-  border-top: 6px solid #c4032a;
+.cards__item.youtube::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: #c4032a;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
-.indicators__item .social-media {
+.cards__item .social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 20px;
 }
-.indicators__item .social-media img {
+.cards__item .social-media img {
   margin-right: 5px;
 }
-.indicators__item .count span {
+.cards__item .count span {
   font-weight: 700;
   font-size: 4em;
 }
-.indicators__item .count p {
+.cards__item .count p {
   margin: 0;
   font-size: 1.1em;
   letter-spacing: 4px;
   text-transform: UPPERCASE;
   color: gray;
 }
-.indicators__item .current {
+.cards__item .current {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
 }
-.indicators__item .current.up {
+.cards__item .current.up {
   color: #1fb589;
 }
-.indicators__item .current.down {
+.cards__item .current.down {
   color: #dc414c;
 }
-.indicators__item .current img {
+.cards__item .current img {
   margin-right: 5px;
   width: 10px;
 }
