@@ -14,14 +14,56 @@ body {
 .header__wrapper {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
-.header__wrapper .title h1 {
+.header .title h1 {
   margin: 0;
 }
-.header__wrapper .title p {
+.header .title p {
   margin: 0;
   font-weight: bold;
   color: gray;
+}
+.header .dark-mode {
+  display: flex;
+  align-items: center;
+}
+.header .dark-mode p {
+  margin: 0;
+  color: gray;
+  font-weight: 700;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+.header .dark-mode .switch {
+  width: 60px;
+  height: 30px;
+  background: linear-gradient(45deg, #1ca0f2, #20b589);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  padding: 2px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.header .dark-mode .switch.on .switch-option {
+  transform: translateX(30px);
+  background: #1e202a;
+}
+.header .dark-mode .switch-option {
+  width: 25px;
+  height: 25px;
+  background: #f5f7ff;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.5s;
+}
+.header .dark-mode .switch-option input[type=checkbox] {
+  visibility: hidden;
 }
 
 .wrapper {

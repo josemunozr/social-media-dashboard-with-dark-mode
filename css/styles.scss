@@ -17,14 +17,56 @@ body {
   &__wrapper {
     width: 80%;
     margin: 0 auto;
-    .title {
-      h1 {
-        margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .title {
+    h1 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      font-weight: bold;
+      color: gray;
+    }
+  }
+  .dark-mode {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+      color: gray;
+      font-weight: 700;
+      margin-right: 5px;
+      font-size: 1rem;
+    }
+    .switch {
+      width: 60px;
+      height: 30px;
+      background: linear-gradient(45deg, #1ca0f2, #20b589);
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+      padding: 2px;
+      box-sizing: border-box;
+      position: relative;
+      cursor: pointer;
+      transition: all .5s;
+      &.on .switch-option {
+        transform: translateX(30px);
+        background: #1e202a;
       }
-      p {
-        margin: 0;
-        font-weight: bold;
-        color: gray;
+      &-option {
+        width: 25px;
+        height: 25px;
+        background: #f5f7ff;
+        border-radius: 50%;
+        position: absolute;
+        transition: all .5s;
+        input[type="checkbox"] {
+          visibility: hidden;
+        }
       }
     }
   }
