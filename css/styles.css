@@ -51,7 +51,7 @@ body {
   transition: all 0.5s;
 }
 .header .dark-mode .switch.on .switch-option {
-  transform: translateX(30px);
+  transform: translateX(0px);
   background: #1e202a;
 }
 .header .dark-mode .switch-option {
@@ -60,6 +60,7 @@ body {
   background: #f5f7ff;
   border-radius: 50%;
   position: absolute;
+  transform: translateX(30px);
   transition: all 0.5s;
 }
 .header .dark-mode .switch-option input[type=checkbox] {
@@ -176,7 +177,7 @@ body {
 }
 .overview-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill minmax(250px, 1fr));
   grid-gap: 49px;
 }
 .overview__card {
