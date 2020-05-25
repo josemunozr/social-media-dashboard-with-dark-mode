@@ -1,33 +1,81 @@
 @import './colors.scss';
 
 $border-radius: 6px;
+$brackpoint-mobile-l: 425px;
+$brackpoint-mobile-s: 320px;
 
 body {
-  background-color: white;
+  background-color: $bg-ligth-theme;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+  &.darkmode {
+    background-color: $bg-dark-theme;
+    transition: all .1s;
+    .header {
+      background-color: $header-dark-theme;
+      transition: all .1s;
+      h1 {
+        color: white;
+        transition: all .1s;
+      }
+    }
+    .main__item {
+      background-color: $bg-card-dark-theme;
+      transition: all .1s;
+      .social-media span,
+      .count span {
+        color: white;
+        transition: all .1s;
+      }
+    }
+    .overview {
+      .title, &__card-footer--number {
+        color: white;
+        transition: all .1s;
+      }
+      &__card {
+        background-color: $bg-card-dark-theme;
+        transition: all .1s;
+      }
+    }
+  }
 }
 
 .header {
-  background-color: hsl(225, 100%, 98%);
+  background-color: $header-ligth-theme;
   height: 250px;
   padding-top: 4rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   &__wrapper {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $brackpoint-mobile-l) {
+      flex-direction: column;
+    }
   }
   .title {
     h1 {
       margin: 0;
+      @media (max-width: $brackpoint-mobile-l) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: $brackpoint-mobile-s) {
+        font-size: 1.2rem;
+      }
     }
     p {
       margin: 0;
       font-weight: bold;
       color: gray;
+    }
+    @media (max-width: $brackpoint-mobile-l) {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid black;
     }
   }
   .dark-mode {
@@ -43,7 +91,7 @@ body {
     .switch {
       width: 60px;
       height: 30px;
-      background: linear-gradient(45deg, #1ca0f2, #20b589);
+      background: linear-gradient(45deg,#378fe6, #3eda82);
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
       border-bottom-left-radius: 15px;
@@ -70,6 +118,11 @@ body {
         }
       }
     }
+
+    @media (max-width: $brackpoint-mobile-l) {
+      margin-top: 1rem;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -78,15 +131,18 @@ body {
   margin: 0 auto;
   top: -120px;
   position: relative;
+  @media (max-width: $brackpoint-mobile-s) {
+    top: -90px;
+  }
 }
 
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
   grid-gap: 49px;
   &__item {
     height: 250px;
-    background-color: $bg-card-item;
+    background-color: $bg-card-ligth-theme;
     padding: 10px;
     text-align: center;
     display: flex;
@@ -186,13 +242,13 @@ body {
   }
   &-content{
     display: grid;
-    grid-template-columns: repeat(auto-fill minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     grid-gap: 49px;
   }
   &__card {
     height: 125px;
     border-radius: $border-radius;
-    background-color: $bg-card-item;
+    background-color: $bg-card-ligth-theme;
     padding: 2rem;
     display: flex;
     flex-direction: column;

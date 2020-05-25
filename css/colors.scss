@@ -1,5 +1,4 @@
 //Primary
-
 $lime-green: hsl(163, 72%, 41%);
 $bright-red: hsl(356, 69%, 56%);
 $facebook: hsl(203, 89%, 53%);
@@ -8,10 +7,17 @@ $instagram: linear-gradient(45deg,#fdc468,#df4996);
 $youtube: hsl(348, 97%, 39%);
 
 //Dark Theme
-
-$dark-theme: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+$bg-dark-theme: #1e202a;
+$header-dark-theme: #1f212e;
+$text-colo-dark-theme: #1e202a;
+$bg-card-dark-theme: #252a41;
 
 // Light Theme
-
-$light-theme: hsl(230, 22%, 74%);
 $bg-card-item: #f0f2fa;
+$bg-ligth-theme: #ffffff;
+$header-ligth-theme: #f5f7ff;
+$text-color-ligth-theme: #2b2f3e;
+$bg-card-ligth-theme: #f0f2fa;
+
+
+
