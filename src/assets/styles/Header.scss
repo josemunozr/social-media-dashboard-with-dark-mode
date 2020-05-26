@@ -1,0 +1,83 @@
+@import './Vars.scss';
+.header {
+  background-color: $header-ligth-theme;
+  height: 250px;
+  padding-top: 4rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $brackpoint-mobile-l) {
+      flex-direction: column;
+    }
+  }
+  .title {
+    h1 {
+      margin: 0;
+      @media (max-width: $brackpoint-mobile-l) {
+        font-size: 1.5rem;
+      }
+      @media (max-width: $brackpoint-mobile-s) {
+        font-size: 1.2rem;
+      }
+    }
+    p {
+      margin: 0;
+      font-weight: bold;
+      color: gray;
+    }
+    @media (max-width: $brackpoint-mobile-l) {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid black;
+    }
+  }
+  .dark-mode {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+      color: gray;
+      font-weight: 700;
+      margin-right: 5px;
+      font-size: 1rem;
+    }
+    .switch {
+      width: 60px;
+      height: 30px;
+      background: linear-gradient(45deg,#378fe6, #3eda82);
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+      padding: 2px;
+      box-sizing: border-box;
+      position: relative;
+      cursor: pointer;
+      transition: all .5s;
+      &.on .switch-option {
+        transform: translateX(0px);
+        background: #1e202a;
+      }
+      &-option {
+        width: 25px;
+        height: 25px;
+        background: #f5f7ff;
+        border-radius: 50%;
+        position: absolute;
+        transform: translateX(30px);
+        transition: all .5s;
+        input[type="checkbox"] {
+          visibility: hidden;
+        }
+      }
+    }
+
+    @media (max-width: $brackpoint-mobile-l) {
+      margin-top: 1rem;
+      justify-content: space-between;
+    }
+  }
+}

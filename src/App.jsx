@@ -1,7 +1,9 @@
 import React from 'react';
+import Header from './components/Header';
+import './assets/styles/App.scss';
 
 const App = () => (
-  <h1>Social Media</h1>
+  <Header />
 );
 
 export default App;
