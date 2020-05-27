@@ -1,0 +1,18 @@
+{
+  "main": [
+    {
+      "socialRed": {
+        "name": "facebook",
+        "userName": "@jmunoz"
+      },
+      "counter": {
+        "type": "followers",
+        "number": 1987
+      },
+      "status": {
+        "type": "up",
+        "number": 12
+      }
+    }
+  ]
+}

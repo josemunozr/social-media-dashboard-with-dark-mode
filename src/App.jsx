@@ -7,18 +7,20 @@ import MainCard from './components/MainCard';
 import OverviewCard from './components/OverviewCard';
 import './assets/styles/App.scss';
 
-const App = () => (
-  <>
-    <Header />
-    <IndicatorsContainer>
-      <MainCardsContainer>
-        <MainCard />
-      </MainCardsContainer>
-      <OverviewContainer>
-        <OverviewCard />
-      </OverviewContainer>
-    </IndicatorsContainer>
-  </>
-);
+const App = () => {
+  return (
+    <>
+      <Header />
+      <IndicatorsContainer>
+        <MainCardsContainer>
+          <MainCard />
+        </MainCardsContainer>
+        <OverviewContainer>
+          <OverviewCard />
+        </OverviewContainer>
+      </IndicatorsContainer>
+    </>
+  );
+};
 
 export default App;
