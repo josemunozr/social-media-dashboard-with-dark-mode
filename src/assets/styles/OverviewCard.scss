@@ -1,0 +1,46 @@
+@import './Vars.scss';
+
+.overview__card {
+  height: 125px;
+  border-radius: $border-radius;
+  background-color: $bg-card-ligth-theme;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  &-header, &-footer {
+    flex-grow: 1;
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .title {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &--number {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .current {
+      margin-bottom: 5px;
+      &.up {
+        color: #1fb589;
+      }
+      &.down {
+        color: #dc414c;
+      }
+      img {
+        margin-right: 5px;
+        width: 10px;
+      }
+    }
+  }
+}

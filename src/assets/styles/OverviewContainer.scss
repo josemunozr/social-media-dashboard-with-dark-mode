@@ -1,0 +1,11 @@
+.overview {
+  .title {
+    font-size: 2em;
+    color: #646679;
+  }
+  &-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 49px;
+  }
+}
