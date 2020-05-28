@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import IndicatorsContainer from './components/IndicatorsContainer';
 import MainCardsContainer from './components/MainCardsContainer';
@@ -8,13 +8,30 @@ import OverviewCard from './components/OverviewCard';
 import './assets/styles/App.scss';
 
 const App = () => {
+  const [data, setData] = useState({});
+  useEffect(() => {
+    fetch('../initialState.json')
+      .then((resp) => resp.json())
+      .then((data) => {
+        setData(data);
+      });
+  }, []);
+
   return (
     <>
       <Header />
       <IndicatorsContainer>
-        <MainCardsContainer>
-          <MainCard />
-        </MainCardsContainer>
+        {
+          data.main && data.main.length > 0 && (
+            <MainCardsContainer>
+              {
+                data.main.map((item) => (
+                  <MainCard key={item.id} {...item} />
+                ))
+              }
+            </MainCardsContainer>
+          )
+        }
         <OverviewContainer>
           <OverviewCard />
         </OverviewContainer>

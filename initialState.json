@@ -1,7 +1,8 @@
 {
   "main": [
     {
-      "socialRed": {
+      "id": 1,
+      "socialMedia": {
         "name": "facebook",
         "userName": "@jmunoz"
       },
@@ -12,6 +13,51 @@
       "status": {
         "type": "up",
         "number": 12
+      }
+    },
+    {
+      "id": 2,
+      "socialMedia": {
+        "name": "twitter",
+        "userName": "@jmunoz"
+      },
+      "counter": {
+        "type": "followers",
+        "number": 1044
+      },
+      "status": {
+        "type": "up",
+        "number": 99
+      }
+    },
+    {
+      "id": 3,
+      "socialMedia": {
+        "name": "instagram",
+        "userName": "@jmunoz"
+      },
+      "counter": {
+        "type": "followers",
+        "number": "11K"
+      },
+      "status": {
+        "type": "up",
+        "number": 1099
+      }
+    },
+    {
+      "id": 4,
+      "socialMedia": {
+        "name": "youtube",
+        "userName": "jmunoz"
+      },
+      "counter": {
+        "type": "subscribers",
+        "number": 8239
+      },
+      "status": {
+        "type": "down",
+        "number": 144
       }
     }
   ]
