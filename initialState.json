@@ -60,5 +60,87 @@
         "number": 144
       }
     }
+  ],
+  "overview": [
+    {
+      "id": 1,
+      "title": "Page Views",
+      "socialMedia": "facebook",
+      "counter": 87,
+      "status": {
+        "type": "up",
+        "number": 3
+      }
+    },
+    {
+      "id": 2,
+      "title": "Likes",
+      "socialMedia": "facebook",
+      "counter": 52,
+      "status": {
+        "type": "down",
+        "number": 2
+      }
+    },
+    {
+      "id": 3,
+      "title": "Likes",
+      "socialMedia": "instagram",
+      "counter": 5462,
+      "status": {
+        "type": "up",
+        "number": 2257
+      }
+    },
+    {
+      "id": 4,
+      "title": "Profile Viewa",
+      "socialMedia": "instagram",
+      "counter": "52k",
+      "status": {
+        "type": "up",
+        "number": 1375
+      }
+    },
+    {
+      "id": 5,
+      "title": "Retweets",
+      "socialMedia": "twitter",
+      "counter": 117,
+      "status": {
+        "type": "up",
+        "number": 303
+      }
+    },
+    {
+      "id": 6,
+      "title": "Likes",
+      "socialMedia": "twitter",
+      "counter": 507,
+      "status": {
+        "type": "up",
+        "number": 553
+      }
+    },
+    {
+      "id": 7,
+      "title": "Likes",
+      "socialMedia": "youtube",
+      "counter": 107,
+      "status": {
+        "type": "down",
+        "number": 19
+      }
+    },
+    {
+      "id": 8,
+      "title": "Total Views",
+      "socialMedia": "youtube",
+      "counter": 1407,
+      "status": {
+        "type": "down",
+        "number": 12
+      }
+    }
   ]
 }
