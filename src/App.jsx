@@ -9,6 +9,7 @@ import './assets/styles/App.scss';
 
 const App = () => {
   const [data, setData] = useState({});
+  const [theme, setToggleTheme] = useState('lightTheme');
   useEffect(() => {
     fetch('../initialState.json')
       .then((resp) => resp.json())
@@ -17,9 +18,14 @@ const App = () => {
       });
   }, []);
 
+  const handleClickSwitch = () => {
+    const currentTheme = (theme === 'lightTheme') ? 'darkTheme' : 'lightTheme';
+    setToggleTheme(currentTheme);
+  };
+
   return (
-    <>
-      <Header />
+    <div className={theme}>
+      <Header theme={theme} handleClickSwitch={handleClickSwitch} />
       <IndicatorsContainer>
         {
           data.main && data.main.length > 0 && (
@@ -44,7 +50,7 @@ const App = () => {
           )
         }
       </IndicatorsContainer>
-    </>
+    </div>
   );
 };
 

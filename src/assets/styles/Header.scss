@@ -60,11 +60,12 @@
       position: relative;
       cursor: pointer;
       transition: all .5s;
-      &.on .switch-option {
-        transform: translateX(0px);
-        background: #1e202a;
+      input[type="checkbox" i] {
+        visibility: hidden;
       }
-      &-option {
+      
+      &::before {
+        content: "";
         width: 25px;
         height: 25px;
         background: #f5f7ff;
@@ -72,8 +73,11 @@
         position: absolute;
         transform: translateX(30px);
         transition: all .5s;
-        input[type="checkbox"] {
-          visibility: hidden;
+      }
+      &.darkTheme {
+        &::before {
+          transform: translateX(0px);
+          background: #1e202a;
         }
       }
     }

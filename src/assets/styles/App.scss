@@ -7,7 +7,7 @@ body {
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
-  &.darkmode {
+  div:first-child .darkTheme {
     background-color: $bg-dark-theme;
     transition: all .1s;
     .header {

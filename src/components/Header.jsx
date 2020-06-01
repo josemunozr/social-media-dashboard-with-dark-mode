@@ -1,7 +1,8 @@
 import React from 'react';
+import classNames from 'classnames';
 import '../assets/styles/Header.scss';
 
-const Header = () => (
+const Header = ({ theme, handleClickSwitch }) => (
   <header className='header'>
     <div className='header__wrapper'>
       <div className='title'>
@@ -13,11 +14,12 @@ const Header = () => (
       </div>
       <div className='dark-mode'>
         <p>Dark Mode</p>
-        <div className='switch' id='inputSwitch'>
-          <div className='switch-option'>
-            {/* <input type='checkbox' name='switch' checked='false' /> */}
-          </div>
-        </div>
+        <div
+          className={classNames('switch', {
+            'darkTheme': theme === 'darkTheme',
+          })}
+          onClick={handleClickSwitch}
+        />
       </div>
     </div>
   </header>
