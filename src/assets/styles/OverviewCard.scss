@@ -1,10 +1,12 @@
 @import './Vars.scss';
 
 .overview__card {
+  box-sizing: border-box;
   height: 125px;
+  // width: 250px;
   border-radius: $border-radius;
   background-color: $bg-card-ligth-theme;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 
@@ -26,7 +28,7 @@
     justify-content: space-between;
     align-items: flex-end;
     &--number {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 700;
     }
     .current {
